@@ -7,11 +7,11 @@
 ---
 
 ## Day 1 (Tue) — Core concepts + first API call
-- [ ] Read: tokens, context window, temperature/top-p, prompting vs
+- [x] Read: tokens, context window, temperature/top-p, prompting vs
       fine-tuning, system/user/assistant roles
-- [ ] Run: raw curl call to Anthropic Messages API
-- [ ] Run: `basic_call.py` (Python, <10 lines)
-- [ ] Commit: `Week 1 Day 1: basic API calls (curl + python)`
+- [x] Run: raw curl call to Anthropic Messages API
+- [x] Run: `basic_call.py` (Python, <10 lines)
+- [x] Commit: `Week 1 Day 1: basic API calls (curl + python)`
 
 ## Day 2 (Wed) — Tokenizer deep dive
 - [ ] Install `tiktoken` (or equivalent tokenizer lib)
