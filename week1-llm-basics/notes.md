@@ -18,10 +18,14 @@
 
 ## What I built
 
-- `curl_example.sh` — raw HTTP call to the Anthropic Messages API, no SDK,
+- `raw_http_call.sh` — raw HTTP call to the Anthropic Messages API, no SDK,
   to understand the request/response structure directly.
-- `basic_call.py` — minimal Python script (Anthropic SDK) that sends a
+- `sdk_call.py` — minimal Python script (Anthropic SDK) that sends a
   question and prints the response plus token usage.
+- `tokenizer_comparison.py` — compares token counts (Korean vs English,
+  short vs long text) using the `count_tokens` endpoint.
+- `temperature_experiment.py` — same prompt run 5x at temperature 0, 0.3,
+  0.7, 1.0, counts unique answers to see variance.
 
 ## Notes / gotchas
 
@@ -34,6 +38,14 @@
   OpenAI's tokenizer, not Claude's, so it gives wrong numbers. Free,
   no credits used.
 
+- Temperature controls how much low-probability candidates get picked.
+  Barely visible when one answer dominates (e.g. "name an animal" → always
+  "dog"), but clear when candidates are close in probability (e.g.
+  "unusual pet" → hedgehog/axolotl/etc., unique answers went 2→4→5→5 as
+  temp went 0→0.3→0.7→1.0).
+- Even temperature=0 isn't 100% deterministic — parallel GPU processing
+  causes occasional variation, especially between near-tied top candidates.
+
 ## Next
 
-Day 3 — temperature/top-p experiment.
+Day 4 — context window overflow + error handling.

@@ -14,17 +14,17 @@
 - [x] Commit: `Week 1 Day 1: basic API calls (curl + python)`
 
 ## Day 2 (Wed) — Tokenizer deep dive
-- [ ] Install `tiktoken` (or equivalent tokenizer lib)
-- [ ] Compare token count: same sentence in Korean vs English
-- [ ] Compare token count: short sentence vs long paragraph
-- [ ] Write up: 2-3 sentence observation (which surprised you, why)
-- [ ] Commit: `Week 1 Day 2: tokenizer comparison (ko vs en)`
+- [x] Install `tiktoken` (or equivalent tokenizer lib)
+- [x] Compare token count: same sentence in Korean vs English
+- [x] Compare token count: short sentence vs long paragraph
+- [x] Write up: 2-3 sentence observation (which surprised you, why)
+- [x] Commit: `Week 1 Day 2: tokenizer comparison (ko vs en)`
 
 ## Day 3 (Thu) — Temperature / Top-p experiment
-- [ ] Same prompt, temperature = 0, 0.3, 0.7, 1.0, 5 calls each
-- [ ] Check: how often does temp=0 return the identical output?
-- [ ] Check: how varied are outputs at temp=1.0?
-- [ ] Commit: `Week 1 Day 3: temperature/top-p experiment`
+- [x] Same prompt, temperature = 0, 0.3, 0.7, 1.0, 5 calls each
+- [x] Check: how often does temp=0 return the identical output?
+- [x] Check: how varied are outputs at temp=1.0?
+- [x] Commit: `Week 1 Day 3: temperature/top-p experiment`
 
 ## Day 4 (Fri) — Context window limits
 - [ ] Deliberately send a prompt that exceeds the context window
